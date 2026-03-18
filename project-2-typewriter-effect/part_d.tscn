@@ -1,5 +1,35 @@
 [gd_scene format=3 uid="uid://qhcqclx34dmx"]
 
+[ext_resource type="Texture2D" uid="uid://d1yuhgo0wlwhx" path="res://danganronpa2beach.jpg" id="1_dwpr7"]
+[ext_resource type="Texture2D" uid="uid://dxjuyesxadvws" path="res://Nagito_Komaeda_Halfbody_Sprite_%281%29.webp" id="2_yyo2k"]
+[ext_resource type="Texture2D" uid="uid://cwetiejcmfqgm" path="res://NagitoThink.webp" id="3_b4v7d"]
+[ext_resource type="Texture2D" uid="uid://bu642s06wmdfu" path="res://NagitoCrazy.webp" id="4_spjlo"]
+[ext_resource type="Texture2D" uid="uid://166lwnh0t2l" path="res://f6131fd06d3c7c1acd3e1c753e14915f-removebg-preview.png" id="5_b4v7d"]
+[ext_resource type="Script" uid="uid://dsqaadugrj38c" path="res://rich_text_labelD.gd" id="5_yyo2k"]
+[ext_resource type="Texture2D" uid="uid://cciywqo0jgdv" path="res://tumblr_7cccce3905ed3c4a55e4303d341dc81b_64f8f7f9_500.png" id="6_spjlo"]
+[ext_resource type="Texture2D" uid="uid://dwxyikei5xoyk" path="res://NagitoUltraCrazy.webp" id="7_8jguk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b4v7d"]
+bg_color = Color(0.8627451, 0.4862745, 0.27058825, 0.7647059)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_color = Color(0.8, 0.8, 0.29803923, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spjlo"]
+bg_color = Color(0, 0, 0, 0.8)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.8, 0.8, 0.29803923, 1)
+corner_radius_top_left = 45
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="Part D" type="Control" unique_id=834133858]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +37,103 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=794434554]
+layout_mode = 0
+offset_left = -41.0
+offset_top = -142.0
+offset_right = 1372.0
+offset_bottom = 648.0
+texture = ExtResource("1_dwpr7")
+
+[node name="Normal" type="TextureRect" parent="." unique_id=1528277594]
+layout_mode = 0
+offset_left = 306.0
+offset_right = 819.0
+offset_bottom = 648.0
+texture = ExtResource("2_yyo2k")
+
+[node name="Think" type="TextureRect" parent="." unique_id=229950894]
+layout_mode = 0
+offset_left = 306.0
+offset_right = 819.0
+offset_bottom = 648.0
+texture = ExtResource("3_b4v7d")
+
+[node name="Crazy" type="TextureRect" parent="." unique_id=1804338706]
+layout_mode = 0
+offset_left = -50.0
+offset_top = -20.0
+offset_right = 1172.0
+offset_bottom = 657.0
+texture = ExtResource("4_spjlo")
+
+[node name="Happy" type="TextureRect" parent="." unique_id=714513183]
+layout_mode = 0
+offset_left = -69.0
+offset_top = -49.0
+offset_right = 1078.0
+offset_bottom = 697.0
+texture = ExtResource("5_b4v7d")
+
+[node name="Sad" type="TextureRect" parent="." unique_id=1083106486]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -36.0
+offset_right = 1162.0
+offset_bottom = 664.0
+texture = ExtResource("6_spjlo")
+
+[node name="UltraCrazy" type="TextureRect" parent="." unique_id=1830395305]
+layout_mode = 0
+offset_left = -2730.0
+offset_top = -258.0
+offset_right = 1342.0
+offset_bottom = 1476.0
+texture = ExtResource("7_8jguk")
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1229016902]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 336.0
+offset_right = 457.0
+offset_bottom = 411.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_b4v7d")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer2" unique_id=1576397082]
+layout_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=911005823]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 344.0
+offset_right = 544.0
+offset_bottom = 467.0
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 32
+text = "Nagito Komaeda"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1447125948]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 401.0
+offset_right = 1069.0
+offset_bottom = 629.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_spjlo")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=304041557]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1102423389]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 429.0
+offset_right = 1041.0
+offset_bottom = 607.0
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 38
+theme_override_font_sizes/bold_italics_font_size = 40
+theme_override_font_sizes/italics_font_size = 40
+theme_override_font_sizes/mono_font_size = 40
+bbcode_enabled = true
+script = ExtResource("5_yyo2k")

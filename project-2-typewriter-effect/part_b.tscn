@@ -1,5 +1,30 @@
 [gd_scene format=3 uid="uid://dl2fd7fna17aq"]
 
+[ext_resource type="Texture2D" uid="uid://d1yuhgo0wlwhx" path="res://danganronpa2beach.jpg" id="1_nsn63"]
+[ext_resource type="Texture2D" uid="uid://dxjuyesxadvws" path="res://Nagito_Komaeda_Halfbody_Sprite_%281%29.webp" id="2_id878"]
+[ext_resource type="Script" uid="uid://dgmb5x1we3cd3" path="res://rich_text_labelB.gd" id="3_3sstj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y244p"]
+bg_color = Color(0.8627451, 0.4862745, 0.27058825, 0.7647059)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_color = Color(0.8, 0.8, 0.29803923, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i18j"]
+bg_color = Color(0, 0, 0, 0.8)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.8, 0.8, 0.29803923, 1)
+corner_radius_top_left = 45
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="Part B" type="Control" unique_id=454535292]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +32,59 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=22640127]
+layout_mode = 0
+offset_left = -41.0
+offset_top = -142.0
+offset_right = 1372.0
+offset_bottom = 648.0
+texture = ExtResource("1_nsn63")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=155849635]
+layout_mode = 0
+offset_left = 306.0
+offset_right = 819.0
+offset_bottom = 648.0
+texture = ExtResource("2_id878")
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=620239949]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 336.0
+offset_right = 457.0
+offset_bottom = 411.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y244p")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer2" unique_id=804910006]
+layout_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=90473570]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 344.0
+offset_right = 544.0
+offset_bottom = 467.0
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 32
+text = "Nagito Komaeda"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1203356546]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 401.0
+offset_right = 1069.0
+offset_bottom = 629.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2i18j")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1031569206]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=41292109]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 429.0
+offset_right = 1033.0
+offset_bottom = 607.0
+theme_override_font_sizes/normal_font_size = 40
+script = ExtResource("3_3sstj")
