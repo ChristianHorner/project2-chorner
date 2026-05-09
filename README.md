@@ -11,7 +11,7 @@ I developed the project using Godot and GDScript, working and building upon four
 - Typewriter Logic (For-Each Loop): Instead of displaying text instantly, I wrote a loop that iterates through each by putting them into a display string with a
   0.02 second delay.s
 - Rich Text Parsing: I implemented a multiple types of font styles and colors []. When the script encounters a character like [b] or [i], it changes the specific text top be
-  either bold or italiczed; or a mix of both.
+  either bold or italicized; or a mix of both.
 - Sprite Synchronization: I managed a secondary array of Sprite nodes for images, toggling their visibility in sync with the current dialogue index to reflect the character's
   changing emotions (Happy, Normal, Crazy, etc.).
 
@@ -28,7 +28,7 @@ Throughout this project, I gained several "hard" and "soft" skills essential for
   without breaking the core functionality.
 
 What I Would Improve
-- Text Overlap: Although attempted during the project, I was unable to find a solution to overlapping text when clicking in quick succession repedeatly. If given more time, I
+- Text Overlap: Although attempted during the project, I was unable to find a solution to overlapping text when clicking in quick succession repeadeatly. If given more time, I
   would implement a check to ensure that long lines of text don't begin until the previous is finished to prevent overlap.
 - Dialogue Skipping: I would add logic that allows the player to click a second time to "finish" the typewriter effect instantly if they are a fast reader.
 - Data Structure: Currently, the sprites and dialogue are in two separate arrays; I would improve this by combining them into one somehow, with each line of text being
